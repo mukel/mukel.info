@@ -34,6 +34,8 @@ jQuery(document).ready(function($) {
             }
         }
     });
+    
+/*
     $(".tweet-stream").tweet({
         username: "barackobama",
         //modpath: "twitter/",
@@ -41,6 +43,7 @@ jQuery(document).ready(function($) {
         template: "{text}{time}",
         loading_text: "loading twitter feed..."
     });
+
     if ($.fn.jflickrfeed) $(".flickr-stream ul").jflickrfeed({
         qstrings: {
             id: "52617155@N08"
@@ -48,6 +51,8 @@ jQuery(document).ready(function($) {
         limit: 12,
         itemTemplate: '<li><a href="{{link}}" title="{{title}}" target="_blank"><img src="{{image_s}}" alt="{{title}}" /></a></li>'
     });
+*/
+
     $("#back-top").hide();
     $(function() {
         $(window).scroll(function() {
