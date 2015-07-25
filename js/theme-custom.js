@@ -79,6 +79,8 @@ jQuery(function() {
         })
     })
 });
+
+/*
 $(document).ready(function() {
     'use strict';
     jQuery("#contact_form").validate({
@@ -127,7 +129,12 @@ $(document).ready(function() {
         },
     })
 });
+*/
+
 $(document).ready(function() {
+	$(".switch-button").hide();
+	$(".styleswitcher").hide();
+	/*
     $(".switch-button").click(function() {
         if ($(this).is(".open")) {
             $(this).addClass("closed");
@@ -141,9 +148,11 @@ $(document).ready(function() {
             $(".styleswitcher").animate({
                 "left": "0px"
             })
-        }
+        }    
     })
+    */
 });
+
 $(document).ready(function() {
     if ($.cookie("css")) {
         $("link.alt").attr("href", $.cookie("css"))
