@@ -154,15 +154,19 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+    /*
     if ($.cookie("css")) {
         $("link.alt").attr("href", $.cookie("css"))
-    }
+    }*/
+
     $(".color-scheme a").click(function() {
         $("link.alt").attr("href", $(this).attr("rel"));
+        /*
         $.cookie("css", $(this).attr('rel'), {
             expires: 365,
             path: '/'
         });
+        */
         return false
     });
     imgPathStart = "images/pattern/";
