@@ -17,7 +17,7 @@
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
         
-        <meta name="theme-color" content="#123456">
+        <meta name="theme-color">
         
         <!-- Google Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,300' rel='stylesheet' type='text/css'>
@@ -714,6 +714,25 @@
     </script>    
     	
     <script type='text/javascript' src="js/theme-custom.js"></script>
+
+    <script>
+	    function getRandomColor() {
+	    	var letters = '0123456789ABCDEF'.split('');
+	    	var color = '#';
+	    	for (var i = 0; i < 6; i++ )
+	        	color += letters[Math.floor(Math.random() * 16)];
+        	return color;
+    	}
+
+    	var metaTag = $('meta[name="theme-color"]');		
+
+		function animate() {
+    		metaTag.attr("content", getRandomColor());    	
+		} 
+
+		setInterval(animate, 4);
+			
+	</script>
 
 </body>
 </html>
