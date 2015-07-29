@@ -6,9 +6,10 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="theme-color" content="#123456">
         <title>Alfonso² Peterssen</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width">        
         
         <!-- Favicons -->
         <link rel="shortcut icon" href="favicon.ico">
@@ -16,9 +17,7 @@
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-57x57.png" />
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
-        
-        <meta name="theme-color">
-        
+                
         <!-- Google Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,300' rel='stylesheet' type='text/css'>
         
@@ -624,6 +623,7 @@
             <li><a class="orange-theme" rel="css/theme-orange.css" href="arther.html#"></a></li>
             <li><a class="yellow-theme" rel="css/theme-yellow.css" href="arther.html#"></a></li>
             <li><a class="blue2-theme" rel="css/theme-blue2.css" href="arther.html#"></a></li>
+            <li><a class="blue3-theme" rel="css/theme-blue3.css" href="arther.html#"></a></li>
         </ul>
         <div id="pattern-selector">
             <h6>Background Pattterns</h6>
@@ -714,25 +714,6 @@
     </script>    
     	
     <script type='text/javascript' src="js/theme-custom.js"></script>
-
-    <script>
-	    function getRandomColor() {
-	    	var letters = '0123456789ABCDEF'.split('');
-	    	var color = '#';
-	    	for (var i = 0; i < 6; i++ )
-	        	color += letters[Math.floor(Math.random() * 16)];
-        	return color;
-    	}
-
-    	var metaTag = $('meta[name="theme-color"]');		
-
-		function animate() {
-    		metaTag.attr("content", getRandomColor());    	
-		} 
-
-		setInterval(animate, 4);
-			
-	</script>
 
 </body>
 </html>
