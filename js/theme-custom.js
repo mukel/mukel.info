@@ -167,7 +167,7 @@ $(document).ready(function() {
             path: '/'
         });
         */
-        return false
+        return false;
     });
     imgPathStart = "images/pattern/";
     imgPathEnd = new Array("pattern0.png", "pattern1.png", "pattern2.png", "pattern3.png", "pattern4.png", "pattern5.png", "pattern6.png", "pattern7.png", "pattern8.png", "pattern9.png");
